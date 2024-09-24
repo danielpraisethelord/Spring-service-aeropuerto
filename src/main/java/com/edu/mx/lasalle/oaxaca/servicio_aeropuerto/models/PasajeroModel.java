@@ -3,12 +3,14 @@ package com.edu.mx.lasalle.oaxaca.servicio_aeropuerto.models;
 import java.time.LocalDate;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "pasajero")
 public class PasajeroModel {
 
+    @Id
     private int id;
     private String nombre;
     private String apellido;
